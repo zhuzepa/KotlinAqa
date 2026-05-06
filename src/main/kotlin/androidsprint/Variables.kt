@@ -82,4 +82,32 @@ fun main() {
     val A = principal * (1 + rate).pow(years)
     println("%.3f".format(A))
 
+//Итоговая задача по главам 1–3. Данные уже в шаблоне.
+//Посчитайте и выведите:
+//totalOrders — общее количество заказов (существующие + новые);
+//totalRevenue — общую выручку (totalOrders * avgCheck);
+//discountedRevenue — выручку со скидкой 15% (totalRevenue * 0.85);
+//bonusOrders — сколько «бонусных» заказов сверх полных десятков (остаток от деления totalOrders на 10);
+//isPremium — уже объявлен; просто выведите его значение через println().
+//Каждое значение выводите через отдельный println().
+
+
+    val existing = 75
+    val newOrders = 12
+    val avgCheck = 2350.0
+    val isPremium: Boolean = true
+
+    val totalOrders = existing + newOrders
+    val totalRevenue = totalOrders * avgCheck
+    val discountedRevenue = totalRevenue * 0.85
+    val bonusOrders = totalOrders % 10
+
+
+
+    println(totalOrders)
+    println(totalRevenue)
+    println(discountedRevenue)
+    println(bonusOrders)
+    println(isPremium)
+
 }
