@@ -10,6 +10,5 @@ $inputNumber × 6 = ${inputNumber * 6}
 $inputNumber × 7 = ${inputNumber * 7}
 $inputNumber × 8 = ${inputNumber * 8}
 $inputNumber × 9 = ${inputNumber * 9}
-$inputNumber × 10 = ${inputNumber * 10}
 """.trimIndent())
 }
