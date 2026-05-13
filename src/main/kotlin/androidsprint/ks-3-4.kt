@@ -1,12 +1,12 @@
 fun main() {
-    var from_square = "E2"
-    var to_square = "E4"
-    var move_number = 1
-    println("[$from_square-$to_square;$move_number]")
+    var fromSquare = "E2"
+    var toSquare = "E4"
+    var moveNumber = 1
+    println("[$fromSquare-$toSquare;$moveNumber]")
 
-    from_square = "D2"
-    to_square = "D3"
-    move_number = 2
-    println("[$from_square-$to_square;$move_number]")
+    fromSquare = "D2"
+    toSquare = "D3"
+    moveNumber ++
+    println("$fromSquare-$toSquare;$moveNumber")
 
 }
