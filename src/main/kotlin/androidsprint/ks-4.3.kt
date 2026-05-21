@@ -1,11 +1,12 @@
+const val HUMIDITY = 20
+const val SEASON = "зима"
 fun main() {
-    val weatherToday = true
-    val tentOpen = true
-    val humidity = 20
-    val season = "зима"
+    val isWeatherToday = true
+    val isTentOpen = true
+
 
     val result =
-        weatherToday == true && tentOpen == true && humidity == 20 && season != "зима"
+        isWeatherToday && isTentOpen && HUMIDITY == 20 && SEASON != "зима"
     println("Благоприятные ли условия сейчас для роста бобовых? $result")
 
 
