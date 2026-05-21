@@ -6,7 +6,7 @@
 //}
 //
 ////Прямой диапазон
-//fun main() {
+//fun main() {q
 //    for (i in 1..10) {
 //
 //        println(i)
