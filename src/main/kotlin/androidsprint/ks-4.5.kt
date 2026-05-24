@@ -1,18 +1,17 @@
 const val MIN_CREW = 55
 const val MAX_CREW = 70
-const val MIN_PROVISIONS_FOR_DAMAGE = 50
-const val MIN_PROVISIONS_FOR_NO_DAMAGE = 50
+const val MIN_PROVISIONS = 50
 
 fun main() {
     val isShipNoDamage = readln().toBoolean()
-    val hasEnoughCrew = readln().toInt()
+    val EnoughCrew = readln().toInt()
     val boxesProvisions = readln().toInt()
     val isWeatherFavorable = readln().toBoolean()
 
-    val isEnoughCrew = hasEnoughCrew in MIN_CREW..MAX_CREW
-    val isBoxesProvisions = boxesProvisions > MIN_PROVISIONS_FOR_NO_DAMAGE  // ← исправлено!
-    val isProvisions50OrMore = boxesProvisions >= MIN_PROVISIONS_FOR_DAMAGE
-    val isCrewExactly70 = hasEnoughCrew == MAX_CREW
+    val isEnoughCrew = EnoughCrew in MIN_CREW..MAX_CREW
+    val isBoxesProvisions = boxesProvisions > MIN_PROVISIONS  // ← исправлено!
+    val isProvisions50OrMore = boxesProvisions >= MIN_PROVISIONS
+    val isCrewExactly70 = EnoughCrew == MAX_CREW
     val hasDamage = !isShipNoDamage
 
     val option1 = isShipNoDamage && isEnoughCrew && isBoxesProvisions
