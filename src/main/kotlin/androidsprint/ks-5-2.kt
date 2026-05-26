@@ -1,4 +1,4 @@
-    const val AGE_OF_MAJORITY = 18
+const val AGE_OF_MAJORITY = 18
     fun main() {
         val year = 2026
         println("Введите год рождения: ")
