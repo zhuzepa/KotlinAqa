@@ -1,20 +1,20 @@
+const val BOAR_DUSER = "Zaphod"
+const val BOARD_USER_PASSWORD = "PanGalactic"
 fun main() {
-    val boardUser = "Zaphod"
-    val boardUserPassword = "PanGalactic"
     println("Вас встречает параноидальный робот-андройд Марвин")
     println("Введите свой логин: ")
     val loginUser = readln()
 
     when (loginUser) {
-        boardUser -> {
+        BOAR_DUSER -> {
             println("Введите пароль: ")
             val password = readln()
 
-            if (password == boardUserPassword) {
+            if (password == BOARD_USER_PASSWORD) {
                 println(
                     """
                     Вздыхает... Ваши данные проверены, и о, чудо, они верны...
-                    Пользователь $boardUser, вам разрешено входить на борт корабля "Heart of Gold".
+                    Пользователь $BOAR_DUSER, вам разрешено входить на борт корабля "Heart of Gold".
                     Хотя мне всё равно... Ну вперед, войдите... Если вам так уж надо, в конце концов...
                     Меланхолический вздох. Надеюсь, вам понравится пребывание здесь больше, чем мне.
                 """.trimIndent()
@@ -24,7 +24,12 @@ fun main() {
             }
         }
 
-        else -> println("Пользователь не зарегистрирован. Предлагаю зарегистрироваться... Хотя какой в этом смысл... Всё равно всё бессмысленно...")
+        else -> println(
+            """
+            Пользователь не зарегистрирован. Предлагаю зарегистрироваться... Хотя какой в этом смысл... Всё равно всё бессмысленно...
+            
+        """.trimIndent()
+        )
     }
 
 }
