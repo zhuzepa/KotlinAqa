@@ -1,4 +1,4 @@
-const val BOAR_DUSER = "Zaphod"
+const val BOARD_USER = "Zaphod"
 const val BOARD_USER_PASSWORD = "PanGalactic"
 fun main() {
     println("Вас встречает параноидальный робот-андройд Марвин")
@@ -6,7 +6,7 @@ fun main() {
     val loginUser = readln()
 
     when (loginUser) {
-        BOAR_DUSER -> {
+        BOARD_USER -> {
             println("Введите пароль: ")
             val password = readln()
 
@@ -14,7 +14,7 @@ fun main() {
                 println(
                     """
                     Вздыхает... Ваши данные проверены, и о, чудо, они верны...
-                    Пользователь $BOAR_DUSER, вам разрешено входить на борт корабля "Heart of Gold".
+                    Пользователь $BOARD_USER, вам разрешено входить на борт корабля "Heart of Gold".
                     Хотя мне всё равно... Ну вперед, войдите... Если вам так уж надо, в конце концов...
                     Меланхолический вздох. Надеюсь, вам понравится пребывание здесь больше, чем мне.
                 """.trimIndent()
