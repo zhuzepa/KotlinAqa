@@ -1,5 +1,3 @@
-import kotlin.random.Random
-
 fun main() {
     val userNumbers = mutableListOf<Int>()
     println("Введите первое число: ")
@@ -10,7 +8,7 @@ fun main() {
     userNumbers.add(readln().toInt())
 
     val winningNumbers = List(3) {
-        Random.nextInt(0, 43)
+        (0..42).random()
     }
 
     val matchCount = winningNumbers.intersect(userNumbers).size
