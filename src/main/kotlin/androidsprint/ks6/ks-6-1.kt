@@ -1,4 +1,5 @@
 fun main() {
+    // Регистрация
     println("Регистрация")
     println("Введите логин: ")
     val registrationLogin = readln()
@@ -17,9 +18,7 @@ fun main() {
         println("Введите пароль: ")
         password = readln()
 
-        if (login != registrationLogin || password != registrationPassword) {
-            println("Неверный логин или пароль. Попробуйте снова.")
-        }
+
     } while (login != registrationLogin || password != registrationPassword)
 
     println("Авторизация прошла успешно")
