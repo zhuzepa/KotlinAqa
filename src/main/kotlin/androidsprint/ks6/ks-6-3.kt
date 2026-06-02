@@ -1,7 +1,6 @@
 fun main() {
     println("Введите количество секунд:")
-    val inputSeconds = readln().toInt()
-    var seconds = inputSeconds
+    var seconds = readln().toInt()
 
     while (seconds > 0) {
         println("Осталось секунд: $seconds")
