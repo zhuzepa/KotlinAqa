@@ -1,4 +1,5 @@
 fun main() {
+
     println("Введите количество секунд:")
     val inputSeconds = readln().toInt()
     var seconds = inputSeconds
@@ -7,6 +8,4 @@ fun main() {
         seconds--
     }
     println("Прошло $inputSeconds секунд")
-
-
 }
