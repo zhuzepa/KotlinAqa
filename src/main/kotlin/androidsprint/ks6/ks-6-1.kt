@@ -17,8 +17,6 @@ fun main() {
 
         println("Введите пароль: ")
         password = readln()
-
-
     } while (login != registrationLogin || password != registrationPassword)
 
     println("Авторизация прошла успешно")
