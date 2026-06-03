@@ -12,5 +12,4 @@ const val AGE_OF_MAJORITY = 18
             println("Доступ запрещён")
         }
 
-
     }
