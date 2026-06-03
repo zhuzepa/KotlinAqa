@@ -5,22 +5,19 @@ fun main() {
     println("Введите число от 1 до 9")
     println("У вас 5 попыток")
 
-
     while (numberAttempts > 0) {
+        println("Осталось попыток: $numberAttempts")
         val number = readln().toInt()
+
         if (number == randomNumber) {
             println("Это была великолепная игра!")
-            break
-
-
+            return
         } else {
-            println("Неверно")
             numberAttempts--
-
+            if (numberAttempts > 0) {
+                println("Неверно. Осталось $numberAttempts попыток")
+            }
         }
-
-
     }
     println("Было загадано число $randomNumber")
-
 }
