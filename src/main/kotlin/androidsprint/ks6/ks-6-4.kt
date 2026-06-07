@@ -1,9 +1,10 @@
+const val MAX_ATTEMPTS = 5
+
 fun main() {
-    var numberAttempts = 5
+    var numberAttempts = MAX_ATTEMPTS
     val randomNumber = (1..9).random()
 
-    println("Введите число от 1 до 9")
-    println("У вас 5 попыток")
+    println("Угадай число от 1 до 9. У тебя $MAX_ATTEMPTS попыток")
 
     while (numberAttempts > 0) {
         println("Осталось попыток: $numberAttempts")
